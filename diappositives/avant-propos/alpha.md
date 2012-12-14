@@ -39,7 +39,7 @@
   * Comment passer directement au niveau 42
 
 !SLIDE
-github
+https://github.com/blackheaven/git-intro-if.git
 
 !SLIDE
 N'hésitez pas à poser des questions !
