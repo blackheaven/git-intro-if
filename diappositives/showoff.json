@@ -1,0 +1,26 @@
+{
+  "name": "Git en 60 minutes",
+  "description": "Présentation de Git rapide",
+  "author": "Gautier DI FOLCO < Équipe technique < AEDI",
+  "templates" : {
+      "special" : "simple.tpl"
+  },
+  "pause_msg": "Pause !!!",
+  "sections": [
+    {"section":"avant-propos"},
+    {"section":"introduction"},
+    {"section":"theorie"},
+    {"section":"contenu"},
+    {"section":"references"},
+    {"section":"dag"},
+    {"section":"niveaux"},
+    {"section":"pratique"},
+    {"section":"configuration"},
+    {"section":"navigation"},
+    {"section":"deplacement"},
+    {"section":"strategies"},
+    {"section":"reflog"},
+    {"section":"conflits"},
+    {"section":"conclusion"}
+  ]
+}
