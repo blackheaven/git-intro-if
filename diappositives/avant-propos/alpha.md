@@ -16,7 +16,7 @@
   * geek&poke
   * lesJoiesDuCode
 
-!SLIDE
+!SLIDE bullets
 * Contenu
   * les concepts
   * les commandes de BASE
