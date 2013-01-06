@@ -1,56 +1,46 @@
 !SLIDE subsection
-# deplacement #
-
-!SLIDE bullets
-.notes something
-
-# Second Slide #
-
-* something
-* something else
-* a third thing
-* a fourth thing
-* a fifth thing
-
-!SLIDE bullets
-# Third Slide
-
-* Sometimes bullet items
-  * Have sublists
-  * And some sublist items
-    * Have some of their own
-    * And so on
-* But top-level "bullet items" have no bullets
-  * isn't that odd?
-
-Also, sometimes you just want to have plain text sitting in the middle
-of the screen. The quick brown fox jumps over the lazy dog.
-
-!SLIDE center
-.notes another dark side
-
-![octocat](octocat.png)
-
-!SLIDE
-.notes notes for my slide
-
-	@@@ javascript
-	function setupPreso() {
-	  if (preso_started)
-	  {
-	     alert("already started")
-	     return
-	  }
-	  preso_started = true
-
-	  loadSlides()
-	  doDebugStuff()
-
-	  document.onkeydown = keyDown
-	}
+# Déplacement #
 
 !SLIDE commandline
+.notes liste les branches
+	$ git branch
 
-	$ git commit -am 'incremental bullet points working'
-	[master ac5fd8a] incremental bullet points working
-	 2 files changed, 32 insertions(+), 5 deletions(-)
+!SLIDE commandline
+.notes pas de commit
+	$ git checkout -b mybranch
+ou
+	$ git branch mybranch
+	$ git checkout mybranch
+
+!SLIDE 
+.notes 
+TODO : IMG : 2 branches avec un split
+
+!SLIDE commandline
+.notes Renomme (la branche courante par défaut)
+	$ git branch -m [ancien] nouveau
+
+!SLIDE commandline
+.notes Supprime (la branche courante par défaut)
+	$ git branch -D [branche]
+
+!SLIDE commandline
+.notes Fusionne (la branche courante reçoit par défaut)
+	$ git merge [A] B
+
+!SLIDE 
+.notes 
+TODO : IMG : 2 branches avec un merge
+
+!SLIDE commandline
+.notes detached HEAD (un checkout -b résout le soucis)
+	$ git checkout HEAD~10
+	$ vi main.c
+	$ git commit main.c
+[detached HEAD 20b7c9c]
+ main.c
+ 1 file changed, 1 insertion(+)
+
+!SLIDE 
+TODO : IMG du saut de l'espace
+
