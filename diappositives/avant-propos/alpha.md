@@ -37,6 +37,9 @@
 !SLIDE bullets
   * Comment passer directement au niveau 42
 
+!SLIDE bullets
+  * Comment organiser ses dépôts
+
 !SLIDE
 https://github.com/blackheaven/git-intro-if.git
 
