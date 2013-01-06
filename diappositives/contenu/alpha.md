@@ -1,56 +1,48 @@
 !SLIDE subsection
-# contenu #
-
-!SLIDE bullets
-.notes something
-
-# Second Slide #
-
-* something
-* something else
-* a third thing
-* a fourth thing
-* a fifth thing
-
-!SLIDE bullets
-# Third Slide
-
-* Sometimes bullet items
-  * Have sublists
-  * And some sublist items
-    * Have some of their own
-    * And so on
-* But top-level "bullet items" have no bullets
-  * isn't that odd?
-
-Also, sometimes you just want to have plain text sitting in the middle
-of the screen. The quick brown fox jumps over the lazy dog.
-
-!SLIDE center
-.notes another dark side
-
-![octocat](octocat.png)
+# Gestionnaire de contenu #
 
 !SLIDE
-.notes notes for my slide
+.notes 1.036 LoC de C : seulement un système d'intérrogation et de manipulation de cache
+Gestion de contenu
 
-	@@@ javascript
-	function setupPreso() {
-	  if (preso_started)
-	  {
-	     alert("already started")
-	     return
-	  }
-	  preso_started = true
+!SLIDE
+.notes gestion d'un ensemble d'objets
+# Tout est objet #
 
-	  loadSlides()
-	  doDebugStuff()
+!SLIDE bullets
+.notes tree = arborescence
+* Reference
+* Commit
+* Tree
+* Blob
 
-	  document.onkeydown = keyDown
-	}
+!SLIDE
+Tout est SHA1
 
-!SLIDE commandline
+f642ecf40f686d4b7f6dc8224007aac0117c1d56
 
-	$ git commit -am 'incremental bullet points working'
-	[master ac5fd8a] incremental bullet points working
-	 2 files changed, 32 insertions(+), 5 deletions(-)
+!SLIDE
+Chaque état du fichier est enregistré
+
+Le fichier est enregistré en entier
+
+!SLIDE
+.notes ça prends trop de place !
+
+TODO : IMG
+
+!SLIDE
+# NON !
+
+!SLIDE bullets
+  * L'objet Tree
+    * Le chemin dans l'arborescence
+    * La référence vers les blobs
+
+!SLIDE
+* Une fois un contenu = 1 tree + 1 blob
+* N fois le même contenu = N trees + 1 blob
+
+!SLIDE
+.notes je vous ai menti, compression à la MPEG : 1 snapshot, N diffs, 1 snapshot
+Compression automatique des blobs par diff
