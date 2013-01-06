@@ -18,8 +18,8 @@
     {"section":"configuration"},
     {"section":"navigation"},
     {"section":"deplacement"},
-    {"section":"strategies"},
     {"section":"reflog"},
+    {"section":"strategies"},
     {"section":"conflits"},
     {"section":"conclusion"}
   ]
