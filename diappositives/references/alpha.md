@@ -77,7 +77,7 @@ TODO : IMG 1 branche avec n commit, HEAD + 2a exclus 8f inclus
 	$ git log HEAD~8^3..HEAD~2^2
 
 !SLIDE commandline
-.notes Plusieurs types de références
+.notes Plusieurs types de références ; heads = branches
 	$ ls .git/refs
 	heads
 	remotes
@@ -87,7 +87,7 @@ TODO : IMG 1 branche avec n commit, HEAD + 2a exclus 8f inclus
 # Tags
 
 !SLIDE
-.notes moyen d'accès rapide à un commit
+.notes moyen d'accès rapide à un commit; un tag/une branche n'est qu'un fichier contenant un SHA1, il ne coûte que 40 octets
 TODO : IMG n commits, une branche, un br/HEAD + TAG V1.0
 
 !SLIDE
@@ -126,7 +126,7 @@ TODO : IMG 2 branches master et remote/master
 
 !SLIDE
   * pull = fetch + merge
-  * pul=sh
+  * push
 
 !SLIDE
 une branche à la fois
