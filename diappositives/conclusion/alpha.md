@@ -20,5 +20,8 @@ Faites plein de branches (une par fonctionnalité et fusionnez-là à master à 
 Utilisez pull --rebase
 
 !SLIDE
+Construisez vos commits au fur et à mesure via l'index
+
+!SLIDE
 https://github.com/blackheaven/git-intro-if
 
