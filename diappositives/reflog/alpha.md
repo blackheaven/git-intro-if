@@ -1,56 +1,45 @@
 !SLIDE subsection
-# reflog #
-
-!SLIDE bullets
-.notes something
-
-# Second Slide #
-
-* something
-* something else
-* a third thing
-* a fourth thing
-* a fifth thing
-
-!SLIDE bullets
-# Third Slide
-
-* Sometimes bullet items
-  * Have sublists
-  * And some sublist items
-    * Have some of their own
-    * And so on
-* But top-level "bullet items" have no bullets
-  * isn't that odd?
-
-Also, sometimes you just want to have plain text sitting in the middle
-of the screen. The quick brown fox jumps over the lazy dog.
-
-!SLIDE center
-.notes another dark side
-
-![octocat](octocat.png)
-
-!SLIDE
-.notes notes for my slide
-
-	@@@ javascript
-	function setupPreso() {
-	  if (preso_started)
-	  {
-	     alert("already started")
-	     return
-	  }
-	  preso_started = true
-
-	  loadSlides()
-	  doDebugStuff()
-
-	  document.onkeydown = keyDown
-	}
+# Références et reflog #
 
 !SLIDE commandline
+.notes .git indique un dépôt partagé.
+	$ git remote # Liste
+	$ git remote add foo https://github.com/bar/baz.git # Ajoute
+	$ git remote rm foo # Supprime
 
-	$ git commit -am 'incremental bullet points working'
-	[master ac5fd8a] incremental bullet points working
-	 2 files changed, 32 insertions(+), 5 deletions(-)
+!SLIDE commandline
+.notes push toutes les branches ; master sur ns/b1 ; idem pour fetch
+	$ git push origin --all
+	$ git push origin master:ns/b1
+Ou
+	[remote "origin"]
+		push = refs/heads/master:refs/heads/ns/b1
+
+	$ git push origin master
+
+!SLIDE
+.notes Rappel : un commit ne connait que ses parents, on peut donc en perdre
+TODO : IMG rappel de la photo du saut
+
+!SLIDE
+.notes NON !
+# Reflog
+
+!SLIDE
+.notes le reflog contient toutes les actions effectuées localement durant des mois
+	$ git reflog
+	5a94ead HEAD@{0}: commit: msg
+	faa47ea HEAD@{1}: commit: msg
+	f776321 HEAD@{2}: commit: msg
+	d10408b HEAD@{3}: commit: msg
+	c3464d6 HEAD@{4}: commit: msg
+	174c0b1 HEAD@{5}: commit: msg
+
+!SLIDE commandline
+.notes permet de voir le commit en question
+	$ git show HEAD@{4}
+
+
+!SLIDE
+.notes Impossible de perdre quoi que ce soit et de devoir refaire un clone, fini les detached HEAD
+TODO : IMG chat tranquile
