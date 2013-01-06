@@ -1,56 +1,65 @@
-!SLIDE subsection
-# dag #
-
-!SLIDE bullets
-.notes something
-
-# Second Slide #
-
-* something
-* something else
-* a third thing
-* a fourth thing
-* a fifth thing
-
-!SLIDE bullets
-# Third Slide
-
-* Sometimes bullet items
-  * Have sublists
-  * And some sublist items
-    * Have some of their own
-    * And so on
-* But top-level "bullet items" have no bullets
-  * isn't that odd?
-
-Also, sometimes you just want to have plain text sitting in the middle
-of the screen. The quick brown fox jumps over the lazy dog.
-
-!SLIDE center
-.notes another dark side
-
-![octocat](octocat.png)
+!SLIDE
+.notes on va parler de dagues, oups pas ce genre
+TODO : IMG poignard
 
 !SLIDE
-.notes notes for my slide
+TODO : IMG graphe
 
-	@@@ javascript
-	function setupPreso() {
-	  if (preso_started)
-	  {
-	     alert("already started")
-	     return
-	  }
-	  preso_started = true
+!SLIDE subsection
+.notes Utilisé pour organiser les commits
+# Directed acyclic graph #
 
-	  loadSlides()
-	  doDebugStuff()
+Graphe orienté acyclique
 
-	  document.onkeydown = keyDown
-	}
+!SLIDE
+Fait partie du Back-end
 
-!SLIDE commandline
+!SLIDE
+.notes rappel tout est SHA1
+TODO : IMG de chat
 
-	$ git commit -am 'incremental bullet points working'
-	[master ac5fd8a] incremental bullet points working
-	 2 files changed, 32 insertions(+), 5 deletions(-)
+!SLIDE
+# Chaque commit comprends
+Un identifiant
+
+!SLIDE
+Un message associé
+
+!SLIDE
+Un auteur
+
+!SLIDE
+Un ensemble de références vers son tree lui même connaissant ses blobs
+
+!SLIDE
+Un ensemble de références vers ses ancêtres
+
+!SLIDE
+# Combien ?
+
+!SLIDE
+.notes 0 pour le premier commit
+TODO : IMG 1 commit
+
+!SLIDE
+.notes 1 pour les cas courrants
+TODO : IMG n commits pour une branche
+
+
+!SLIDE
+.notes n pour les merges, split = 2 commits avec un parent, merge = 1 commit avec un parent
+TODO : IMG n commits, deux branches, un split, un merge
+
+
+!SLIDE
+.notes acceder à un commit n'est rien de plus qu'un déplacement dans le graphe et faire un commit revient à modifier le graphe
+Un commit = un noeud du graphe
+
+!SLIDE
+TODO : IMG idem précédente
+
+!SLIDE
+.notes mais comment on y accède
+TODO : IMG perplexe
+
+
