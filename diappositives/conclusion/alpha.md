@@ -1,56 +1,24 @@
 !SLIDE subsection
-# conclusion #
-
-!SLIDE bullets
-.notes something
-
-# Second Slide #
-
-* something
-* something else
-* a third thing
-* a fourth thing
-* a fifth thing
-
-!SLIDE bullets
-# Third Slide
-
-* Sometimes bullet items
-  * Have sublists
-  * And some sublist items
-    * Have some of their own
-    * And so on
-* But top-level "bullet items" have no bullets
-  * isn't that odd?
-
-Also, sometimes you just want to have plain text sitting in the middle
-of the screen. The quick brown fox jumps over the lazy dog.
-
-!SLIDE center
-.notes another dark side
-
-![octocat](octocat.png)
+# Conclusion #
 
 !SLIDE
-.notes notes for my slide
+Git c'est pas de la magie
 
-	@@@ javascript
-	function setupPreso() {
-	  if (preso_started)
-	  {
-	     alert("already started")
-	     return
-	  }
-	  preso_started = true
+!SLIDE
+Un grand pouvoir implique de grandes responsabilités.
 
-	  loadSlides()
-	  doDebugStuff()
+!SLIDE
+Ne remplace pas la communication
 
-	  document.onkeydown = keyDown
-	}
+!SLIDE
+Faites pleins de petits commits
 
-!SLIDE commandline
+!SLIDE
+Faites plein de branches (une par fonctionnalité et fusionnez-là à master à la fin)
 
-	$ git commit -am 'incremental bullet points working'
-	[master ac5fd8a] incremental bullet points working
-	 2 files changed, 32 insertions(+), 5 deletions(-)
+!SLIDE
+Utilisez pull --rebase
+
+!SLIDE
+https://github.com/blackheaven/git-intro-if
+
