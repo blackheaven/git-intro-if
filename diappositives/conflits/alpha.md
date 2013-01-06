@@ -1,56 +1,28 @@
 !SLIDE subsection
-# conflits #
-
-!SLIDE bullets
-.notes something
-
-# Second Slide #
-
-* something
-* something else
-* a third thing
-* a fourth thing
-* a fifth thing
-
-!SLIDE bullets
-# Third Slide
-
-* Sometimes bullet items
-  * Have sublists
-  * And some sublist items
-    * Have some of their own
-    * And so on
-* But top-level "bullet items" have no bullets
-  * isn't that odd?
-
-Also, sometimes you just want to have plain text sitting in the middle
-of the screen. The quick brown fox jumps over the lazy dog.
-
-!SLIDE center
-.notes another dark side
-
-![octocat](octocat.png)
+# Conflits #
 
 !SLIDE
-.notes notes for my slide
+TODO : trouver la photo du catcheur qui regarde la tête en arrière
 
-	@@@ javascript
-	function setupPreso() {
-	  if (preso_started)
-	  {
-	     alert("already started")
-	     return
-	  }
-	  preso_started = true
+!SLIDE bullets
+* resolve
+* recursive
+* octopus
+* ours
+* subtree
 
-	  loadSlides()
-	  doDebugStuff()
+!SLIDE bullets
+.notes sous-stratégies recursive
+* ours, theirs
+* patience
+* ignore-space-change, ignore-all-space, ignore-space-at-eol
+* renormalize, no-renormalize
+* rename-threshold, subtree
 
-	  document.onkeydown = keyDown
-	}
 
 !SLIDE commandline
+.notes ouvre automatique l'outil pour chaque conflit
+	$git mergetool
 
-	$ git commit -am 'incremental bullet points working'
-	[master ac5fd8a] incremental bullet points working
-	 2 files changed, 32 insertions(+), 5 deletions(-)
+!SLIDE
+TODO : trouver la photo du zèbre
