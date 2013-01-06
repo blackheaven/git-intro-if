@@ -1,5 +1,4 @@
 !SLIDE title-slide
-.notes first slide
 # Introduction à Git #
 
 !SLIDE
