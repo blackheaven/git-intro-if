@@ -1,56 +1,30 @@
 !SLIDE subsection
-# navigation #
-
-!SLIDE bullets
-.notes something
-
-# Second Slide #
-
-* something
-* something else
-* a third thing
-* a fourth thing
-* a fifth thing
-
-!SLIDE bullets
-# Third Slide
-
-* Sometimes bullet items
-  * Have sublists
-  * And some sublist items
-    * Have some of their own
-    * And so on
-* But top-level "bullet items" have no bullets
-  * isn't that odd?
-
-Also, sometimes you just want to have plain text sitting in the middle
-of the screen. The quick brown fox jumps over the lazy dog.
-
-!SLIDE center
-.notes another dark side
-
-![octocat](octocat.png)
-
-!SLIDE
-.notes notes for my slide
-
-	@@@ javascript
-	function setupPreso() {
-	  if (preso_started)
-	  {
-	     alert("already started")
-	     return
-	  }
-	  preso_started = true
-
-	  loadSlides()
-	  doDebugStuff()
-
-	  document.onkeydown = keyDown
-	}
+# Navigation #
 
 !SLIDE commandline
+.notes Bouge HEAD et le working directory à REF
+	$ git checkout REF
 
-	$ git commit -am 'incremental bullet points working'
-	[master ac5fd8a] incremental bullet points working
-	 2 files changed, 32 insertions(+), 5 deletions(-)
+!SLIDE commandline
+.notes remet le repository (HEAD + br/HEAD) et/ou l'index et/ou le working directory à REF
+	$ git reset [MODE] [REF] [FICHIERS]
+
+!SLIDE commandline
+.notes Créé un commit avec les changement inverses de A (exclus) à B ou de HEAD à B
+	$ git revert [A..]B
+
+!SLIDE commandline
+.notes affiche l'état courant des fichiers (ajouté, supprimé, modifié, non-tracé)
+	$ git status
+
+!SLIDE commandline
+.notes affiche les logs, REFS peut être une expression
+	$ git log [REFS]
+
+!SLIDE commandline
+.notes Afficher un commit
+	$ git show [REF]
+
+!SLIDE commandline
+.notes Affiche les différences, REFS peut être une expression
+	$ git diff [REFS] [FICHIERS]
