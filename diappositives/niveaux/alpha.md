@@ -1,56 +1,55 @@
 !SLIDE subsection
-# niveaux #
-
-!SLIDE bullets
-.notes something
-
-# Second Slide #
-
-* something
-* something else
-* a third thing
-* a fourth thing
-* a fifth thing
-
-!SLIDE bullets
-# Third Slide
-
-* Sometimes bullet items
-  * Have sublists
-  * And some sublist items
-    * Have some of their own
-    * And so on
-* But top-level "bullet items" have no bullets
-  * isn't that odd?
-
-Also, sometimes you just want to have plain text sitting in the middle
-of the screen. The quick brown fox jumps over the lazy dog.
-
-!SLIDE center
-.notes another dark side
-
-![octocat](octocat.png)
+.notes concept le plus dur à retenir
+# Niveaux #
 
 !SLIDE
-.notes notes for my slide
-
-	@@@ javascript
-	function setupPreso() {
-	  if (preso_started)
-	  {
-	     alert("already started")
-	     return
-	  }
-	  preso_started = true
-
-	  loadSlides()
-	  doDebugStuff()
-
-	  document.onkeydown = keyDown
-	}
+.notes Rappel : Git est un simple gestionnaire de cache
+TODO : IMG repository (commit), index (commit en cours), working directory + ur la flêche de index à repo git commit et git add sur WD -> index
 
 !SLIDE commandline
+.notes ajoute main.c à l'index
+	$ git add main.c
 
-	$ git commit -am 'incremental bullet points working'
-	[master ac5fd8a] incremental bullet points working
-	 2 files changed, 32 insertions(+), 5 deletions(-)
+!SLIDE commandline
+.notes Crée un commit à partir de l'index; Crée un commit à partir du working directory
+	$ git commit
+	$ git commit -a
+
+!SLIDE commandline
+.notes ajoute main.c à l'index
+	$ git add main.c
+
+!SLIDE commandline
+.notes différence par rapport au répository (dernier commit)
+	$ git diff main.c
+
+!SLIDE commandline
+.notes différence par rapport à l'index (commit courant)
+	$ git diff --cached main.c
+
+!SLIDE commandline
+.notes affiche l'état des fichiers / wat ?! / le premier est l'index, l'autre le workind directory
+	$ git add main.c
+	$ vi main.c
+	$ git status
+	# On branch master
+	# Changes to be committed:
+	#   (use "git reset HEAD <file>..." to unstage)
+	#
+	#	modified:   main.c
+	#
+	# Changes not staged for commit:
+	#   (use "git add <file>..." to update what will be committed)
+	#   (use "git checkout -- <file>..." to discard changes in working directory)
+	#
+	#	modified:   main.c
+	#
+
+!SLIDE 
+# Stash
+
+!SLIDE bullets
+  * Espace temporaire
+  * Extrait les modification du working directory
+  * Peu utilisé en faveur des branches
+
