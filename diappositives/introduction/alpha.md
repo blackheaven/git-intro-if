@@ -13,7 +13,7 @@
 
 !SLIDE bullets
 * Auto-hébergé en 5 jours
-* 2.647 lignes de C
+* 1.036 lignes de C
 * Simple cache
 
 !SLIDE bullets
