@@ -28,8 +28,7 @@ Le fichier est enregistré en entier
 
 !SLIDE
 .notes ça prends trop de place !
-
-TODO : IMG
+![Oh](oh.gif)
 
 !SLIDE
 # NON !

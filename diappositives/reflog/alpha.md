@@ -19,7 +19,7 @@ Ou
 
 !SLIDE
 .notes Rappel : un commit ne connait que ses parents, on peut donc en perdre
-TODO : IMG rappel de la photo du saut
+![Chute libre](saut.gif)
 
 !SLIDE
 .notes NON !
@@ -42,4 +42,4 @@ TODO : IMG rappel de la photo du saut
 
 !SLIDE
 .notes Impossible de perdre quoi que ce soit et de devoir refaire un clone, fini les detached HEAD
-TODO : IMG chat tranquile
+![La classe](chat.gif)

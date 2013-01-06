@@ -2,5 +2,4 @@
 # Pratique #
 
 !SLIDE center
-![octocat](octocat.png)
-TODO : IMG
+![Ah les débuts...](pratique.gif)

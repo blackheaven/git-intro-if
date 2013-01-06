@@ -1,9 +1,9 @@
 !SLIDE
 .notes on va parler de dagues, oups pas ce genre
-TODO : IMG poignard
+![Poignard](cut.gif)
 
 !SLIDE
-TODO : IMG graphe
+![Graphe](graph.jpg)
 
 !SLIDE subsection
 .notes Utilisé pour organiser les commits
@@ -16,7 +16,7 @@ Fait partie du Back-end
 
 !SLIDE
 .notes rappel tout est SHA1
-TODO : IMG de chat
+![SHA](chat.gif)
 
 !SLIDE
 # Chaque commit comprends
@@ -59,7 +59,7 @@ Un commit = un noeud du graphe
 TODO : IMG idem précédente
 
 !SLIDE
-.notes mais comment on y accède
-TODO : IMG perplexe
+.notes mais comment on y accède ?
+![Perplexe](perplex.gif)
 
 

@@ -21,11 +21,11 @@ Toute référence est unique
 
 !SLIDE
 .notes en partant de ce constat comment sait où on est dans le graphe ? indice : un commit ne connait sa branche
-TODO : IMG perdu (plan énorme avec vous ête ici)
+![Perdu ?](perdu.gif)
 
 !SLIDE
 .notes Le HEAD : dernier commit d'une branche
-TODO : IMG mais où ais-je la tête
+![J'ai perdu le tête](tete.gif)
 
 !SLIDE commandline
 .notes HEAD : référence courante
@@ -103,7 +103,7 @@ Mais le Dag ?
 
 !SLIDE
 .notes une référence est perdu à jamais, il y a un ramasse miette qui supprime toutes les références inacessibles au bout d'un certain temps
-TODO : IMG (le noooooon de luke)
+![Zut](luke.gif)
 
 !SLIDE
 .notes Outil le plus puissant de Git disponible uniquement sur Git et Darc

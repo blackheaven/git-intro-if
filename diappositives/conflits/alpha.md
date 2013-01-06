@@ -2,7 +2,7 @@
 # Conflits #
 
 !SLIDE
-TODO : trouver la photo du catcheur qui regarde la tête en arrière
+![Ça va mal se passer](brute.gif)
 
 !SLIDE bullets
 * resolve
@@ -25,4 +25,4 @@ TODO : trouver la photo du catcheur qui regarde la tête en arrière
 	$git mergetool
 
 !SLIDE
-TODO : trouver la photo du zèbre
+![Sans les mains](zebre.gif)

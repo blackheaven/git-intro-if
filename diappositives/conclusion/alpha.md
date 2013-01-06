@@ -9,6 +9,7 @@ Un grand pouvoir implique de grandes responsabilités.
 
 !SLIDE
 Ne remplace pas la communication
+![Travail d'équipe](equipe.gif)
 
 !SLIDE
 Faites pleins de petits commits
