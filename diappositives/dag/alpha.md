@@ -39,16 +39,16 @@ Un ensemble de références vers ses ancêtres
 
 !SLIDE
 .notes 0 pour le premier commit
-TODO : IMG 1 commit
+![Seul au monde](un.svg)
 
 !SLIDE
 .notes 1 pour les cas courrants
-TODO : IMG n commits pour une branche
+![À à à la queuleuleu](file.svg)
 
 
 !SLIDE
 .notes n pour les merges, split = 2 commits avec un parent, merge = 1 commit avec un parent
-TODO : IMG n commits, deux branches, un split, un merge
+![Branchement](branchement.svg)
 
 
 !SLIDE
@@ -56,7 +56,7 @@ TODO : IMG n commits, deux branches, un split, un merge
 Un commit = un noeud du graphe
 
 !SLIDE
-TODO : IMG idem précédente
+![Branchement](branchement.svg)
 
 !SLIDE
 .notes mais comment on y accède ?
