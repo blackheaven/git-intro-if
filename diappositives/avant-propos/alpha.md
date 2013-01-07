@@ -48,8 +48,8 @@ N'hésitez pas à poser des questions !
 
 !SLIDE
 .notes SVN
-![subversion](subversion.png)
+![subversion](svn.jpg)
 
 !SLIDE
 .notes Git
-![git](git.png)
+![git](git.jpg)
