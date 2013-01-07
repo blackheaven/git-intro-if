@@ -11,10 +11,11 @@
 .notes push toutes les branches ; master sur ns/b1 ; idem pour fetch
 	$ git push origin --all
 	$ git push origin master:ns/b1
-Ou
+	# Ou
+	$ vi .git/config
 	[remote "origin"]
-		push = refs/heads/master:refs/heads/ns/b1
-
+	    push = refs/heads/master:refs/heads/ns/b1
+	
 	$ git push origin master
 
 !SLIDE
