@@ -1,7 +1,7 @@
 {
   "name": "Git en 60 minutes",
   "description": "Présentation de Git rapide",
-  "author": "Gautier DI FOLCO < Équipe technique < AEDI",
+  "author": "Équipe technique < AEDI",
   "templates" : {
       "special" : "simple.tpl"
   },
