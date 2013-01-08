@@ -39,11 +39,11 @@ Un ensemble de références vers ses ancêtres
 
 !SLIDE
 .notes 0 pour le premier commit
-![Seul au monde](un.svg)
+![Un commit](un.svg)
 
 !SLIDE
 .notes 1 pour les cas courrants
-![À à à la queuleuleu](file.svg)
+![Flux linéaire](file.svg)
 
 
 !SLIDE
