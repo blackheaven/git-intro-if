@@ -4,7 +4,7 @@
 
 !SLIDE
 .notes Rappel : Git est un simple gestionnaire de cache
-TODO : IMG repository (commit), index (commit en cours), working directory + ur la flêche de index à repo git commit et git add sur WD -> index
+![Niveaux](niveaux.svg)
 
 !SLIDE commandline
 .notes ajoute main.c à l'index

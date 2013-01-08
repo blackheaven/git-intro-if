@@ -1,0 +1,8 @@
+digraph G
+{
+    a [shape=box] [label="Working Directory"];
+    b [shape=box] [label="Index (commit en cours)"];
+    c [shape=box] [label="Repository (commits)"];
+    a -> b [label=" git add"];
+    b -> c [label=" git commit"];
+}
