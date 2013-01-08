@@ -14,7 +14,7 @@ ou
 
 !SLIDE 
 .notes 
-TODO : IMG : 2 branches avec un split
+![Branchement](branches.svg)
 
 !SLIDE commandline
 .notes Renomme (la branche courante par défaut)
@@ -30,7 +30,7 @@ TODO : IMG : 2 branches avec un split
 
 !SLIDE 
 .notes 
-TODO : IMG : 2 branches avec un merge
+![Fusion](fusion.svg)
 
 !SLIDE commandline
 .notes detached HEAD (un checkout -b résout le soucis)
