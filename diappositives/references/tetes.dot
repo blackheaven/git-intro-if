@@ -1,0 +1,22 @@
+digraph G
+{
+    rankdir=LR;
+    "9754d40473" -> "9e59700d33" -> "35ee8ce6b6";
+    "5c071a6b2c" -> "968bda3251" -> "103dba9760";
+    subgraph c1
+    {
+        rankdir=UD;
+        rank="max";
+        "b1/HEAD" [shape=box];
+        "HEAD" [shape=box];
+        "HEAD" -> "b1/HEAD";
+        "b1/HEAD" -> "103dba9760";
+    }
+    subgraph c2
+    {
+        rankdir=DU;
+        rank="sink";
+        "b2/HEAD" [shape=box];
+        "b2/HEAD" -> "35ee8ce6b6";
+    }
+}

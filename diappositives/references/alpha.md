@@ -38,7 +38,7 @@ Toute référence est unique
 	35ee8ce6b66480fc67eea935431fad16a9ee44c0
 
 !SLIDE
-TODO : IMG deux branches sans merge avec chacunes un branche/HEAD + une des deux avec HEAD
+![2 branches et 3 têtes](tetes.svg)
 
 !SLIDE
 mini langage de manipulation
