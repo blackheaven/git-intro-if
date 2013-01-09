@@ -47,13 +47,13 @@ mini langage de manipulation
 .notes Commit n - 1 ; git show : voir un commit ; HEAD peut être n'importe quel référence (Tag, SHA1, etc.)
 	$ git show HEAD~1
 
-TODO : IMG 1 branche avec n commit, HEAD + HEAD - 1
+![Ancêtre](ancetre.svg)
 
 !SLIDE commandline
 .notes 2ème parent
 	$ git show HEAD^2
 
-TODO : IMG 2 branches avec n commit, HEAD + 2ème parent
+![Parents](parents.svg)
 
 !SLIDE commandline
 .notes équivalents
@@ -68,9 +68,9 @@ TODO : IMG 2 branches avec n commit, HEAD + 2ème parent
 
 !SLIDE commandline
 .notes Interval ; log = liste des commits
-	$ git log 2a32..8f48
+	$ git log 968b..9e597
 
-TODO : IMG 1 branche avec n commit, HEAD + 2a exclus 8f inclus
+![Sélection](selection.svg)
 
 !SLIDE commandline
 .notes peut devenir complexe
@@ -88,7 +88,7 @@ TODO : IMG 1 branche avec n commit, HEAD + 2a exclus 8f inclus
 
 !SLIDE
 .notes moyen d'accès rapide à un commit; un tag/une branche n'est qu'un fichier contenant un SHA1, il ne coûte que 40 octets
-TODO : IMG n commits, une branche, un br/HEAD + TAG V1.0
+![Tag](tag.svg)
 
 !SLIDE
 Différence entre un HEAD et un Tag ?
@@ -112,8 +112,7 @@ Mais le Dag ?
 !SLIDE
 .notes s'ajoute au Dag
 1 seul Dag
-
-TODO : IMG 2 branches master et remote/master
+![Remote](remote.svg)
 
 !SLIDE
 .note notions importante

@@ -1,0 +1,13 @@
+digraph G
+{
+    rankdir=LR;
+    "9e59700d33" [color="green"] [style="filled"];
+    "5c071a6b2c" -> "968bda3251" -> "9754d40473" -> "9e59700d33" -> "2a3242efa4";
+    subgraph c2
+    {
+        rankdir=DU;
+        rank="sink";
+        "br/HEAD" [shape=box];
+        "br/HEAD" -> "2a3242efa4";
+    }
+}
