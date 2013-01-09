@@ -1,6 +1,14 @@
-digraph G
+digraph "Branchement et fusion"
 {
     rankdir=LR;
-    "5c071a6b2c" -> "968bda3251"                                                 -> "103dba9760" -> "e974e8334e" -> "cf41c59ef2" -> "35ee8ce6b6" -> "8f48c3097f";
-                    "968bda3251" -> "9754d40473" -> "9e59700d33"                                                                 -> "35ee8ce6b6"                ;
+    subgraph master
+    {
+        "5c071a6b2c" -> "968bda3251" -> "103dba9760" -> "e974e8334e" -> "cf41c59ef2" -> "35ee8ce6b6" -> "8f48c3097f";
+    }
+    subgraph master
+    {
+        "968bda3251" -> "9754d40473" [weight=0];
+        "9e59700d33" -> "35ee8ce6b6" [weight=0];
+        "9754d40473" -> "9e59700d33";
+    }
 }

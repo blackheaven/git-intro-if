@@ -1,5 +1,4 @@
-
-digraph G
+digraph "Sélection de deux commits"
 {
     rankdir=LR;
     "9754d40473" [color="green"] [style="filled"];

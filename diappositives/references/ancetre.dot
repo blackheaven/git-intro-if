@@ -1,4 +1,4 @@
-digraph G
+digraph "Ancêtres"
 {
     rankdir=LR;
     "9e59700d33" [color="green"] [style="filled"];
