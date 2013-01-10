@@ -1,0 +1,17 @@
+digraph "Rebase"
+{
+    rankdir=LR;
+    subgraph master
+    {
+        "cf41c59ef2" [color="blue"] [style="filled"];
+        "8f48c3097f" [color="blue"] [style="filled"];
+        "5c071a6b2c" -> "968bda3251" -> "103dba9760" -> "e974e8334e" -> "cf41c59ef2" -> "8f48c3097f";
+    }
+    subgraph branch
+    {
+        "968bda3251" -> "9754d40473" [weight=0];
+        "9754d40473" [color="red"] [style="filled"];
+        "9e59700d33" [color="red"] [style="filled"];
+        "9754d40473" -> "9e59700d33";
+    }
+}

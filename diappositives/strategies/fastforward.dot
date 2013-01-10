@@ -1,0 +1,27 @@
+digraph "Fast-forward"
+{
+    rankdir=LR;
+    subgraph master
+    {
+        "5c071a6b2c" -> "968bda3251";
+    }
+    subgraph branch
+    {
+        "968bda3251" -> "9754d40473" [weight=0];
+        "9754d40473" -> "9e59700d33" -> "35ee8ce6b6";
+    }
+    subgraph c1
+    {
+        rank="same";
+        "remote/master/HEAD" [shape=box];
+        "remote/master/HEAD" -> "35ee8ce6b6" [weight=0];
+        newmh [label="master/HEAD"] [shape=box] [color="blue"] [style="filled"];
+        newmh -> "35ee8ce6b6" [weight=0];
+    }
+    subgraph c2
+    {
+        rank="same";
+        oldmh [label="master/HEAD"] [shape=box] [color="red"] [style="filled"];
+        oldmh -> "968bda3251" [weight=0];
+    }
+}

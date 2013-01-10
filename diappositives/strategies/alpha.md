@@ -17,15 +17,15 @@
 
 !SLIDE
 .notes
-TODO : IMG ff
+![Fast-forward](fastforward.svg)
 
 !SLIDE
 .notes
-TODO : IMG commit
+![Fusion](fusion.svg)
 
 !SLIDE
 .notes ...; en cas de conflit, on le résout commit par commit; utilisez
-TODO : IMG rebase
+![Rabse](rebase.svg)
 
 !SLIDE commandline
 .notes si non ça rajoute des commits inutiles au dag
