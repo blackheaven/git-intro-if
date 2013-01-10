@@ -1,34 +1,42 @@
 !SLIDE subsection
 .notes concept le plus dur à retenir
+
 # Niveaux #
 
 !SLIDE
 .notes Rappel : Git est un simple gestionnaire de cache
+
 ![Niveaux](niveaux.svg)
 
 !SLIDE commandline
 .notes ajoute main.c à l'index
+
 	$ git add main.c
 
 !SLIDE commandline
 .notes Crée un commit à partir de l'index; Crée un commit à partir du working directory
+
 	$ git commit
 	$ git commit -a
 
 !SLIDE commandline
 .notes ajoute main.c à l'index
+
 	$ git add main.c
 
 !SLIDE commandline
 .notes différence par rapport au répository (dernier commit)
+
 	$ git diff main.c
 
 !SLIDE commandline
 .notes différence par rapport à l'index (commit courant)
+
 	$ git diff --cached main.c
 
 !SLIDE commandline
 .notes affiche l'état des fichiers / wat ?! / le premier est l'index, l'autre le workind directory
+
 	$ git add main.c
 	$ vi main.c
 	$ git status

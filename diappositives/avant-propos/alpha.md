@@ -25,6 +25,8 @@
 
 !SLIDE bullets
 .notes on est en IF que diable
+
+
   * Troll (un peu quand même)
 
 !SLIDE bullets
@@ -32,6 +34,8 @@
 
 !SLIDE bullets
 .notes le but est de mieux utiliser git, pas de l'utiliser tout le temps. Une solution résout un problème.
+
+
   * De la propagande pour Git
 
 !SLIDE bullets
@@ -48,8 +52,12 @@ N'hésitez pas à poser des questions !
 
 !SLIDE
 .notes SVN
+
+
 ![subversion](svn.jpg)
 
 !SLIDE
 .notes Git
+
+
 ![git](git.jpg)

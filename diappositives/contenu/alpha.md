@@ -3,14 +3,17 @@
 
 !SLIDE
 .notes 1.036 LoC de C : seulement un système d'intérrogation et de manipulation de cache
+
 Gestion de contenu
 
 !SLIDE
 .notes gestion d'un ensemble d'objets
+
 # Tout est objet #
 
 !SLIDE bullets
 .notes tree = arborescence
+
 * Reference
 * Commit
 * Tree
@@ -28,6 +31,7 @@ Le fichier est enregistré en entier
 
 !SLIDE
 .notes ça prends trop de place !
+
 ![Oh](oh.gif)
 
 !SLIDE
@@ -44,4 +48,5 @@ Le fichier est enregistré en entier
 
 !SLIDE
 .notes je vous ai menti, compression à la MPEG : 1 snapshot, N diffs, 1 snapshot
+
 Compression automatique des blobs par diff

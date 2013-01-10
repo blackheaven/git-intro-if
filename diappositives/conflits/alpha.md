@@ -13,6 +13,7 @@
 
 !SLIDE bullets
 .notes sous-stratégies recursive
+
 * ours, theirs
 * patience
 * ignore-space-change, ignore-all-space, ignore-space-at-eol
@@ -22,6 +23,7 @@
 
 !SLIDE commandline
 .notes ouvre automatique l'outil pour chaque conflit
+
 	$git mergetool
 
 !SLIDE

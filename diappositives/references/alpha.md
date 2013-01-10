@@ -1,5 +1,6 @@
 !SLIDE subsection
 .notes concept le plus dur à apréhender
+
 # Références #
 
 !SLIDE
@@ -10,6 +11,7 @@ Fait partie du front-end
 
 !SLIDE
 .notes Peut être abrégé
+
 8f48c3097fb9f09a8eefbb4ad2023638981e704c
 8f48c
 
@@ -21,19 +23,24 @@ Toute référence est unique
 
 !SLIDE
 .notes en partant de ce constat comment sait où on est dans le graphe ? indice : un commit ne connait sa branche
+
 ![Perdu ?](perdu.gif)
 
 !SLIDE
 .notes Le HEAD : dernier commit d'une branche
+
+HEAD : dernier commit d'une branche
 ![J'ai perdu le tête](tete.gif)
 
 !SLIDE commandline
 .notes HEAD : référence courante
+
 	$ cat .git/HEAD
 	ref: refs/heads/master
 
 !SLIDE commandline
 .notes chaque branche à son HEAD
+
 	$ cat .git/refs/heads/master
 	35ee8ce6b66480fc67eea935431fad16a9ee44c0
 
@@ -45,39 +52,46 @@ mini langage de manipulation
 
 !SLIDE commandline
 .notes Commit n - 1 ; git show : voir un commit ; HEAD peut être n'importe quel référence (Tag, SHA1, etc.)
+
 	$ git show HEAD~1
 
 ![Ancêtre](ancetre.svg)
 
 !SLIDE commandline
 .notes 2ème parent
+
 	$ git show HEAD^2
 
 ![Parents](parents.svg)
 
 !SLIDE commandline
 .notes équivalents
+
 	$ git show HEAD^1
 	$ git show HEAD^
 	$ git show HEAD
 
 !SLIDE commandline
 .notes équivalents
+
 	$ git show HEAD^2
 	$ git show HEAD^^
 
 !SLIDE commandline
 .notes Interval ; log = liste des commits
+
 	$ git log 968b..9e597
 
 ![Sélection](selection.svg)
 
 !SLIDE commandline
 .notes peut devenir complexe
+
 	$ git log HEAD~8^3..HEAD~2^2
 
 !SLIDE commandline
 .notes Plusieurs types de références ; heads = branches
+
 	$ ls .git/refs
 	heads
 	remotes
@@ -88,6 +102,7 @@ mini langage de manipulation
 
 !SLIDE
 .notes moyen d'accès rapide à un commit; un tag/une branche n'est qu'un fichier contenant un SHA1, il ne coûte que 40 octets
+
 ![Tag](tag.svg)
 
 !SLIDE
@@ -95,22 +110,27 @@ Différence entre un HEAD et un Tag ?
 
 !SLIDE
 .notes HEAD est déplace automatiquement, Tag manuellement
+
 L'utilisateur !
 
 !SLIDE
 .notes rappel : un commit ne connais que son/ses ancêtre(s)
+
 Mais le Dag ?
 
 !SLIDE
 .notes une référence est perdu à jamais, il y a un ramasse miette qui supprime toutes les références inacessibles au bout d'un certain temps
+
 ![Zut](luke.gif)
 
 !SLIDE
 .notes Outil le plus puissant de Git disponible uniquement sur Git et Darc
+
 # Remotes
 
 !SLIDE
 .notes s'ajoute au Dag
+
 1 seul Dag
 ![Remote](remote.svg)
 
@@ -120,6 +140,7 @@ Mais le Dag ?
 
 !SLIDE
 .notes on ajoute un remote puis on fetch (reception) ou push (envoi)
+
   * fetch
   * push
 
@@ -132,6 +153,7 @@ une branche à la fois
 
 !SLIDE commandline
 .notes rappel
+
 	$ cat .git/HEAD
 	ref: refs/heads/master
 
@@ -140,14 +162,17 @@ une branche à la fois
 
 !SLIDE commandline
 .notes master devient origin/b2
+
 	$ git pull origin master:origin/b2
 	$ git push origin master:origin/b2
 
 !SLIDE
 .notes de manière générale
-<source>:<destination>
+
+\<source\>:\<destination\>
 
 !SLIDE commandline
 .notes attention : supprime la branche
+
 	$ git push origin :origin/b2
 
