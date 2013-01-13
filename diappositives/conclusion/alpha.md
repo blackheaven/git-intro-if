@@ -3,6 +3,7 @@
 
 !SLIDE
 Git c'est pas de la magie
+![Magie](magie.gif)
 
 !SLIDE
 Un grand pouvoir implique de grandes responsabilités.

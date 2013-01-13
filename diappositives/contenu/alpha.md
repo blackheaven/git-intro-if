@@ -15,9 +15,12 @@ Gestion de contenu
 .notes tree = arborescence
 
 * Reference
+* Tag
 * Commit
 * Tree
 * Blob
+
+![Pseudo-UML](classes.svg)
 
 !SLIDE
 Tout est SHA1
