@@ -19,13 +19,9 @@
   * Rebase (rebase)
 
 !SLIDE
-.notes
-
 ![Fast-forward](fastforward.svg)
 
 !SLIDE
-.notes
-
 ![Fusion](fusion.svg)
 
 !SLIDE
