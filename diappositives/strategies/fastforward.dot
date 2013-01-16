@@ -1,27 +1,29 @@
 digraph "Fast-forward"
 {
     rankdir=LR;
-    subgraph master
-    {
-        "5c071a6b2c" -> "968bda3251";
+    subgraph c1 {
+        rank=same;
+        "968bda3251";
+        oldmh [label="master/HEAD"] [shape=box] [color="red"] [style="filled"];
     }
-    subgraph branch
-    {
-        "968bda3251" -> "9754d40473" [weight=0];
-        "9754d40473" -> "9e59700d33" -> "35ee8ce6b6";
-    }
-    subgraph c1
-    {
-        rank="same";
-        "remote/master/HEAD" [shape=box];
-        "remote/master/HEAD" -> "35ee8ce6b6" [weight=0];
-        newmh [label="master/HEAD"] [shape=box] [color="blue"] [style="filled"];
-        newmh -> "35ee8ce6b6" [weight=0];
+    subgraph c1p5 {
+        rank=same;
+        "9754d40473";
+        inviso [style="invis"];
     }
     subgraph c2
     {
         rank="same";
-        oldmh [label="master/HEAD"] [shape=box] [color="red"] [style="filled"];
-        oldmh -> "968bda3251" [weight=0];
+        "remote/master/HEAD" [shape=box];
+        "35ee8ce6b6" [color="blue"] [style="filled"];
+        newmh [label="master/HEAD"] [shape=box] [color="blue"] [style="filled"];
     }
+    "5c071a6b2c" -> "968bda3251";
+    "968bda3251" -> "9754d40473" [weight=0];
+    "9754d40473" -> "9e59700d33" -> "35ee8ce6b6";
+    oldmh -> "968bda3251" [weight=0];
+    "remote/master/HEAD" -> "35ee8ce6b6";
+    newmh -> "35ee8ce6b6" [weight=0];
+    "968bda3251" -> inviso [style="invis"];
+    "9754d40473" -> inviso [style="invis"];
 }
