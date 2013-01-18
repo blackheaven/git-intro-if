@@ -135,7 +135,8 @@ Mais le Dag ?
 ![Remote](remote.svg)
 
 !SLIDE
-.note notions importante
+.notes notions importante
+
 # Namespaces
 
 !SLIDE
