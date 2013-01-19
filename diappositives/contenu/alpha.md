@@ -20,6 +20,8 @@ Gestion de contenu
 * Tree
 * Blob
 
+!SLIDE bullets
+
 ![Pseudo-UML](classes.svg)
 
 !SLIDE

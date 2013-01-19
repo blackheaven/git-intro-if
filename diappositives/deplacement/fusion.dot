@@ -1,5 +1,6 @@
 digraph "Fusion"
 {
+    size="10,20!";
     rankdir=LR;
     subgraph master
     {

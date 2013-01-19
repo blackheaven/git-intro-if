@@ -1,0 +1,24 @@
+digraph "Classes utilisées par Git"
+{
+    subgraph mother
+    {
+        O [shape=record, label = "{GitObject| ref (sha1)}"];
+    }
+    subgraph herited
+    {
+        rankdir=LR;
+        rank="same";
+        "Tree" [shape=box];
+        "Tag" [shape=box];
+        "Blob" [shape=box];
+        "Commit" [shape=box];
+    }
+    O -> "Tree" [arrowhead="onormal", dir=back];
+    O -> "Blob" [arrowhead="onormal", dir=back];
+    O -> "Commit" [arrowhead="onormal", dir=back];
+    O -> "Tag" [arrowhead="onormal", dir=back];
+    "Tree" -> "Tree" [arrowhead="vee", label=" 0..*\n0..*1"];
+    "Tree" -> "Blob" [arrowhead="vee", label=" 0..*\n1"];
+    "Commit" -> "Tree" [arrowhead="vee", label=" 1..*\n1"];
+    "Tag" -> "Commit" [arrowhead="vee", label=" 0..*\n1"];
+}

@@ -27,7 +27,7 @@
 !SLIDE
 .notes ...; en cas de conflit, on le résout commit par commit; utilisez
 
-![Rabse](rebase.svg)
+![Rebase](rebase.svg)
 
 !SLIDE commandline
 .notes si non ça rajoute des commits inutiles au dag

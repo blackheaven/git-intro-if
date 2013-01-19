@@ -1,6 +1,11 @@
 !SLIDE subsection
 # Introduction #
 
+!SLIDE
+.notes La première chose à laquelle on pense lorsque l'on pense à git c'est : "compliqué"
+
+![Complexité](complique.gif)
+
 !SLIDE commandline
 
 	$ man git
