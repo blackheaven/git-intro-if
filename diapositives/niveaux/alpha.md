@@ -1,41 +1,41 @@
 !SLIDE subsection
-.notes concept le plus dur à retenir
+.notes Concept le plus dur à retenir
 
 # Niveaux #
 
 !SLIDE
-.notes Rappel : Git est un simple gestionnaire de cache
+.notes Rappel : git est un simple gestionnaire de cache
 
 ![Niveaux](niveaux.svg)
 
 !SLIDE commandline
-.notes ajoute main.c à l'index
+.notes Ajoute main.c à l'index
 
 	$ git add main.c
 
 !SLIDE commandline
-.notes Crée un commit à partir de l'index; Crée un commit à partir du working directory
+.notes Crée un commit à partir de l'index ; Crée un commit à partir de la copie de travail
 
 	$ git commit
 	$ git commit -a
 
 !SLIDE commandline
-.notes ajoute main.c à l'index
+.notes Ajoute main.c à l'index
 
 	$ git add main.c
 
 !SLIDE commandline
-.notes différence par rapport au répository (dernier commit)
+.notes Différence par rapport au dépôt (dernier commit)
 
 	$ git diff main.c
 
 !SLIDE commandline
-.notes différence par rapport à l'index (commit courant)
+.notes Différence par rapport à l'index (commit courant)
 
 	$ git diff --cached main.c
 
 !SLIDE commandline
-.notes affiche l'état des fichiers / wat ?! / le premier est l'index, l'autre le workind directory
+.notes Affiche l'état des fichiers / wat ?! / le premier est l'index, l'autre la copie de travail
 
 	$ git add main.c
 	$ vi main.c
@@ -53,11 +53,10 @@
 	#	modified:   main.c
 	#
 
-!SLIDE 
+!SLIDE
 # Stash
 
 !SLIDE bullets
   * Espace temporaire
-  * Extrait les modification du working directory
+  * Extrait les modifications de la copie de travail
   * Peu utilisé en faveur des branches
-

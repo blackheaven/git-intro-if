@@ -1,13 +1,13 @@
 !SLIDE subsection
-.notes concept le plus dur à apréhender
+.notes Concept le plus dur à appréhender
 
 # Références #
 
 !SLIDE
-Fait partie du front-end
+Font parties du frontend
 
 !SLIDE
-# SHA1
+# SHA-1
 
 !SLIDE
 .notes Peut être abrégé
@@ -22,7 +22,7 @@ Tout a une référence (fichier, commit, objets)
 Toute référence est unique
 
 !SLIDE
-.notes en partant de ce constat comment sait où on est dans le graphe ? indice : un commit ne connait sa branche
+.notes En partant de ce constat, comment sait-on où on est dans le graphe ? Indice : un commit ne connait sa branche
 
 ![Perdu ?](perdu.gif)
 
@@ -39,7 +39,7 @@ HEAD : dernier commit d'une branche
 	ref: refs/heads/master
 
 !SLIDE commandline
-.notes chaque branche à son HEAD
+.notes Chaque branche a son HEAD
 
 	$ cat .git/refs/heads/master
 	35ee8ce6b66480fc67eea935431fad16a9ee44c0
@@ -48,10 +48,10 @@ HEAD : dernier commit d'une branche
 ![2 branches et 3 têtes](tetes.svg)
 
 !SLIDE
-mini langage de manipulation
+Mini langage de manipulation
 
 !SLIDE commandline
-.notes Commit n - 1 ; git show : voir un commit ; HEAD peut être n'importe quel référence (Tag, SHA1, etc.)
+.notes Commit n-1 ; git show : voir un commit ; HEAD peut être n'importe quelle référence (Tag, SHA-1, etc.)
 
 	$ git show HEAD~1
 
@@ -65,14 +65,14 @@ mini langage de manipulation
 ![Parents](parents.svg)
 
 !SLIDE commandline
-.notes équivalents
+.notes Équivalents
 
 	$ git show HEAD^1
 	$ git show HEAD^
 	$ git show HEAD
 
 !SLIDE commandline
-.notes équivalents
+.notes Équivalents
 
 	$ git show HEAD^2
 	$ git show HEAD^^
@@ -85,7 +85,7 @@ mini langage de manipulation
 ![Sélection](selection.svg)
 
 !SLIDE commandline
-.notes peut devenir complexe
+.notes Peut devenir complexe
 
 	$ git log HEAD~8^3..HEAD~2^2
 
@@ -101,7 +101,7 @@ mini langage de manipulation
 # Tags
 
 !SLIDE
-.notes moyen d'accès rapide à un commit; un tag/une branche n'est qu'un fichier contenant un SHA1, il ne coûte que 40 octets
+.notes Moyen d'accès rapide à un commit ; un tag/une branche n'est qu'un fichier contenant un SHA-1, il ne coûte que 40 octets
 
 ![Tag](tag.svg)
 
@@ -109,38 +109,38 @@ mini langage de manipulation
 Différence entre un HEAD et un Tag ?
 
 !SLIDE
-.notes HEAD est déplace automatiquement, Tag manuellement
+.notes HEAD est déplacé automatiquement, Tag manuellement
 
 L'utilisateur !
 
 !SLIDE
-.notes rappel : un commit ne connais que son/ses ancêtre(s)
+.notes Rappel : un commit ne connait que son/ses ancêtre(s)
 
 Mais le Dag ?
 
 !SLIDE
-.notes une référence est perdu à jamais, il y a un ramasse miette qui supprime toutes les références inacessibles au bout d'un certain temps
+.notes Quand une référence est perdue à jamais, elle est supprimée. Il y a un ramasse-miettes qui supprime toutes les références inaccessibles au bout d'un certain temps.
 
 ![Zut](luke.gif)
 
 !SLIDE
-.notes Outil le plus puissant de Git disponible uniquement sur Git et Darc
+.notes Outil le plus puissant de git disponible uniquement sur git et Darc
 
 # Remotes
 
 !SLIDE
-.notes s'ajoute au Dag
+.notes S'ajoute au Dag
 
 1 seul Dag
 ![Remote](remote.svg)
 
 !SLIDE
-.notes notions importante
+.notes Notions importantes
 
 # Namespaces
 
 !SLIDE
-.notes on ajoute un remote puis on fetch (reception) ou push (envoi)
+.notes On ajoute un remote puis on fetch (réception) ou on push (envoi)
 
   * fetch
   * push
@@ -150,10 +150,10 @@ Mais le Dag ?
   * push
 
 !SLIDE
-une branche à la fois
+Une branche à la fois
 
 !SLIDE commandline
-.notes rappel
+.notes Rappel
 
 	$ cat .git/HEAD
 	ref: refs/heads/master
@@ -168,12 +168,11 @@ une branche à la fois
 	$ git push origin master:origin/b2
 
 !SLIDE
-.notes de manière générale
+.notes De manière générale
 
 \<source\>:\<destination\>
 
 !SLIDE commandline
-.notes attention : supprime la branche
+.notes Attention : supprime la branche
 
 	$ git push origin :origin/b2
-

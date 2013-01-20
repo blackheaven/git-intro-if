@@ -1,5 +1,5 @@
 !SLIDE
-.notes on va parler de dagues, oups pas ce genre
+.notes On va parler de dagues, oups pas ce genre
 
 ![Poignard](cut.gif)
 
@@ -14,15 +14,15 @@
 Graphe orienté acyclique
 
 !SLIDE
-Fait partie du Back-end
+Fait partie du backend
 
 !SLIDE
-.notes rappel tout est SHA1
+.notes Rappel : tout est SHA-1
 
 ![SHA](chat.gif)
 
 !SLIDE
-# Chaque commit comprends
+# Chaque commit comprend
 Un identifiant
 
 !SLIDE
@@ -32,7 +32,7 @@ Un message associé
 Un auteur
 
 !SLIDE
-Un ensemble de références vers son tree lui même connaissant ses blobs
+Un ensemble de références vers son tree, lui-même connaissant ses blobs
 
 !SLIDE
 Un ensemble de références vers ses ancêtres
@@ -46,28 +46,24 @@ Un ensemble de références vers ses ancêtres
 ![Un commit](un.svg)
 
 !SLIDE
-.notes 1 pour les cas courrants
+.notes 1 pour les cas courants
 
 ![Flux linéaire](file.svg)
 
-
 !SLIDE
-.notes n pour les merges, split = 2 commits avec un parent, merge = 1 commit avec un parent
+.notes N pour les merges, split = 2 commits avec un parent, merge = 1 commit avec un parent
 
 ![Branchement](branchement.svg)
 
-
 !SLIDE
-.notes acceder à un commit n'est rien de plus qu'un déplacement dans le graphe et faire un commit revient à modifier le graphe
+.notes Accéder à un commit n'est rien de plus qu'un déplacement dans le graphe et faire un commit revient à modifier le graphe
 
-Un commit = un noeud du graphe
+Un commit = un nœud du graphe
 
 !SLIDE
 ![Branchement](branchement.svg)
 
 !SLIDE
-.notes mais comment on y accède ?
+.notes Mais comment on y accède ?
 
 ![Perplexe](perplex.gif)
-
-

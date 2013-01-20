@@ -24,8 +24,7 @@
 # Non-contenu #
 
 !SLIDE bullets
-.notes on est en IF que diable
-
+.notes On est en IF que diable...
 
   * Troll (un peu quand même)
 
@@ -33,8 +32,7 @@
   * Comparaison avec Subversion
 
 !SLIDE bullets
-.notes le but est de mieux utiliser git, pas de l'utiliser tout le temps. Une solution résout un problème.
-
+.notes Le but est de mieux utiliser git, pas de l'utiliser tout le temps. Une solution résout un problème.
 
   * De la propagande pour Git
 
@@ -53,11 +51,9 @@ N'hésitez pas à poser des questions !
 !SLIDE
 .notes SVN
 
-
 ![subversion](svn.jpg)
 
 !SLIDE
-.notes Git
-
+.notes git
 
 ![git](git.jpg)

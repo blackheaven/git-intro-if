@@ -1,6 +1,6 @@
 {
-  "name": "Git en 60 minutes",
-  "description": "Présentation de Git rapide",
+  "name": "git en 60 minutes",
+  "description": "Présentation de git rapide",
   "author": "Équipe technique < AEDI",
   "templates" : {
       "special" : "simple.tpl"

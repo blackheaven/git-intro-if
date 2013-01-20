@@ -2,19 +2,19 @@
 # Déplacement #
 
 !SLIDE commandline
-.notes liste les branches
+.notes Liste les branches
 
 	$ git branch
 
 !SLIDE commandline
-.notes pas de commit
+.notes Pas de commit
 
 	$ git checkout -b mybranch
 ou
 	$ git branch mybranch
 	$ git checkout mybranch
 
-!SLIDE 
+!SLIDE
 
 ![Branchement](branches.svg)
 
@@ -33,12 +33,12 @@ ou
 
 	$ git merge [A] B
 
-!SLIDE 
+!SLIDE
 
 ![Fusion](fusion.svg)
 
 !SLIDE commandline
-.notes detached HEAD (un checkout -b résout le soucis)
+.notes Detached HEAD (un checkout -b résout le souci)
 
 	$ git checkout HEAD~10
 	$ vi main.c
@@ -51,4 +51,3 @@ ou
 
 !SLIDE 
 ![Chute libre](saut.gif)
-

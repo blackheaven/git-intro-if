@@ -12,7 +12,7 @@
 * subtree
 
 !SLIDE bullets
-.notes sous-stratégies recursive
+.notes Sous-stratégies recursives
 
 * ours, theirs
 * patience
@@ -20,11 +20,10 @@
 * renormalize, no-renormalize
 * rename-threshold, subtree
 
-
 !SLIDE commandline
-.notes ouvre automatique l'outil pour chaque conflit
+.notes Ouvre automatiquement l'outil pour chaque conflit
 
-	$git mergetool
+	$ git mergetool
 
 !SLIDE
 ![Sans les mains](zebre.gif)

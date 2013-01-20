@@ -2,12 +2,12 @@
 # Gestionnaire de contenu #
 
 !SLIDE
-.notes 1.036 LoC de C : seulement un système d'intérrogation et de manipulation de cache
+.notes 1 036 lignes de C : seulement un système d'interrogation et de manipulation de cache
 
 Gestion de contenu
 
 !SLIDE
-.notes gestion d'un ensemble d'objets
+.notes Gestion d'un ensemble d'objets
 
 # Tout est objet #
 
@@ -25,7 +25,7 @@ Gestion de contenu
 ![Pseudo-UML](classes.svg)
 
 !SLIDE
-Tout est SHA1
+Tout est SHA-1
 
 f642ecf40f686d4b7f6dc8224007aac0117c1d56
 
@@ -35,7 +35,7 @@ Chaque état du fichier est enregistré
 Le fichier est enregistré en entier
 
 !SLIDE
-.notes ça prends trop de place !
+.notes Ça prendrait trop de place !
 
 ![Oh](oh.gif)
 
@@ -52,6 +52,6 @@ Le fichier est enregistré en entier
 * N fois le même contenu = N trees + 1 blob
 
 !SLIDE
-.notes je vous ai menti, compression à la MPEG : 1 snapshot, N diffs, 1 snapshot
+.notes Je vous ai menti, compression à la MPEG : 1 snapshot, N diffs, 1 snapshot
 
 Compression automatique des blobs par diff

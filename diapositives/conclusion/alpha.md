@@ -2,7 +2,7 @@
 # Conclusion #
 
 !SLIDE
-Git c'est pas de la magie
+git, ce n'est pas de la magie !
 
 ![Magie](magie.gif)
 
@@ -15,10 +15,10 @@ Ne remplace pas la communication
 ![Travail d'équipe](equipe.gif)
 
 !SLIDE
-Faites pleins de petits commits
+Faites plein de petits commits
 
 !SLIDE
-Faites plein de branches (une par fonctionnalité et fusionnez-là à master à la fin)
+Faites plein de branches (une par fonctionnalité et fusionnez-la à master à la fin)
 
 !SLIDE
 Utilisez pull --rebase
@@ -28,4 +28,3 @@ Construisez vos commits au fur et à mesure via l'index
 
 !SLIDE
 https://github.com/blackheaven/git-intro-if
-

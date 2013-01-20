@@ -2,7 +2,7 @@
 # Références et reflog #
 
 !SLIDE commandline
-.notes .git indique un dépôt partagé.
+.notes .git indique un dépôt partagé
 
 	$ git remote # Liste
 	$ git remote add foo https://github.com/bar/baz.git # Ajoute
@@ -31,7 +31,7 @@
 # Reflog
 
 !SLIDE
-.notes le reflog contient toutes les actions effectuées localement durant des mois
+.notes Le reflog contient toutes les actions effectuées localement durant des mois
 
 	$ git reflog
 	5a94ead HEAD@{0}: commit: msg
@@ -42,10 +42,9 @@
 	174c0b1 HEAD@{5}: commit: msg
 
 !SLIDE commandline
-.notes permet de voir le commit en question
+.notes Permet de voir le commit en question
 
 	$ git show HEAD@{4}
-
 
 !SLIDE
 .notes Impossible de perdre quoi que ce soit et de devoir refaire un clone, fini les detached HEAD
