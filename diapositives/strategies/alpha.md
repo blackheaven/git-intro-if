@@ -25,7 +25,7 @@
 ![Fusion](fusion.svg)
 
 !SLIDE
-.notes ... ; En cas de conflit, on le résout commit par commit ; utilisez
+.notes réécrit les commits ; En cas de conflit, on le résout commit par commit ; utilisez
 
 ![Rebase](rebase.svg)
 

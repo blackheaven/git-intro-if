@@ -1,29 +1,8 @@
 !SLIDE subsection
 # Références et reflog #
-
-!SLIDE commandline
-.notes .git indique un dépôt partagé
-
-	$ git remote # Liste
-	$ git remote add foo https://github.com/bar/baz.git # Ajoute
-	$ git remote rm foo # Supprime
-
-!SLIDE commandline
-.notes push toutes les branches ; master sur ns/b1 ; idem pour fetch
-
-	$ git push origin --all
-	$ git push origin master:ns/b1
-	# Ou
-	$ vi .git/config
-	[remote "origin"]
-	    push = refs/heads/master:refs/heads/ns/b1
-	
-	$ git push origin master
-
 !SLIDE
-.notes Rappel : un commit ne connait que ses parents, on peut donc en perdre
 
-![Chute libre](saut.gif)
+un commit ne connait que ses parents, on peut donc en perdre
 
 !SLIDE
 .notes NON !
@@ -50,3 +29,27 @@
 .notes Impossible de perdre quoi que ce soit et de devoir refaire un clone, fini les detached HEAD
 
 ![La classe](chat.gif)
+
+!SLIDE
+
+## Les remotes
+
+!SLIDE commandline
+.notes .git indique un dépôt partagé
+
+	$ git remote # Liste
+	$ git remote add foo https://github.com/bar/baz.git # Ajoute
+	$ git remote rm foo # Supprime
+
+!SLIDE commandline
+.notes push toutes les branches ; master sur origin/b1 ; idem pour fetch
+
+	$ git push origin --all
+	$ git push origin master:origin/b1
+	# Ou
+	$ vi .git/config
+	[remote "origin"]
+	    push = refs/heads/master:refs/heads/origin/b1
+	
+	$ git push origin master
+

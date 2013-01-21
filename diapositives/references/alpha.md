@@ -23,7 +23,7 @@ Tout a une référence (fichier, commit, objets)
 Toute référence est unique
 
 !SLIDE
-.notes En partant de ce constat, comment sait-on où on est dans le graphe ? Indice : un commit ne connait sa branche
+.notes En partant de ce constat, comment sait-on où on est dans le graphe ? Indice : un commit ne pas connait sa branche
 
 ![Perdu ?](perdu.gif)
 
