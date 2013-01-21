@@ -14,7 +14,6 @@ Gestion de contenu
 !SLIDE bullets
 .notes tree = arborescence
 
-* Reference
 * Tag
 * Commit
 * Tree

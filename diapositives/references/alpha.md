@@ -13,6 +13,7 @@ Font parties du frontend
 .notes Peut être abrégé
 
 8f48c3097fb9f09a8eefbb4ad2023638981e704c
+
 8f48c
 
 !SLIDE
