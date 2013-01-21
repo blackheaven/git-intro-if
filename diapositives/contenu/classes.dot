@@ -13,12 +13,15 @@ digraph "Classes utilisées par Git"
         "Blob" [shape=box];
         "Commit" [shape=box];
     }
-    O -> "Tree" [arrowhead="onormal", dir=back];
-    O -> "Blob" [arrowhead="onormal", dir=back];
-    O -> "Commit" [arrowhead="onormal", dir=back];
-    O -> "Tag" [arrowhead="onormal", dir=back];
-    "Tree" -> "Tree" [arrowhead="vee", label=" 0..*\n0..*1"];
-    "Tree" -> "Blob" [arrowhead="vee", label=" 0..*\n1"];
-    "Commit" -> "Tree" [arrowhead="vee", label=" 1..*\n1"];
-    "Tag" -> "Commit" [arrowhead="vee", label=" 0..*\n1"];
+    edge [arrowtail="onormal", arrowhead="none", dir=back];
+    O -> "Tree";
+    O -> "Blob";
+    O -> "Commit";
+    O -> "Tag";
+
+    edge [arrowhead="vee", dir=forward];
+    "Tree" -> "Tree" [label="0..*"];
+    "Tree" -> "Blob" [label="0..* 1"];
+    "Commit" -> "Tree" [label="1..* 1"];
+    "Tag" -> "Commit" [label="0..* 1"];
 }
