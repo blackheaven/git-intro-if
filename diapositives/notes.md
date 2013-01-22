@@ -137,17 +137,50 @@ git ne possède pas de moyen d'authentification de base
 --
 Permet de mettre des messages de commit et de faire les fusions
 
-107 # Bouge HEAD et le working directory à REF
+107
+--
+Bouge HEAD et le working directory à REF
+
 108 # Remet le dépôt (HEAD + br/HEAD) et/ou l'index et/ou la copie de travail à REF
-109 # Crée un commit avec les changements inverses de A (exclus) à B ou de HEAD à B
-110 # Affiche l'état courant des fichiers (ajouté, supprimé, modifié, non-tracé)
-111 # Affiche les logs, REFS peut être une expression
-112 # Afficher un commit
-113 # Affiche les différences, REFS peut être une expression
-115 # liste les branches
-118 # renomme la branche
-122 # pourquoi ? on a fait un commit sur aucune branche, donc il est inaccessible sans sa référence
-123 # as-t-on une alternative au grand saut ?
+--
+
+
+109
+--
+Crée un commit avec les changements inverses de A (exclus) à B ou de HEAD à B
+
+110
+--
+Affiche l'état courant des fichiers (ajouté, supprimé, modifié, non-tracé)
+
+111
+--
+Affiche les logs, REFS peut être une expression
+
+112
+--
+Afficher un commit
+
+113
+--
+Affiche les différences, REFS peut être une expression
+
+115
+--
+liste les branches
+
+118
+--
+renomme la branche
+
+122
+--
+pourquoi ? on a fait un commit sur aucune branche, donc il est inaccessible sans sa référence
+
+123
+--
+as-t-on une alternative au grand saut ?
+
 
 131
 --
