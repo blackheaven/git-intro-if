@@ -4,11 +4,13 @@ Conférence git
 1
 --
 Gautier et Pierre-Henri, membre de l'équipe technique de l'AEDI.
+
 On fait cette conférence suite au constat que le temps nous manque pour comprendre Git.
 
 10
 --
 Le but est de mieux utiliser git, pas de l'utiliser tout le temps.
+
 Une solution résout un problème.
 
 18
@@ -18,6 +20,7 @@ La première chose à laquelle on pense lorsque l'on pense à git, c'est : "comp
 20
 --
 Noyau Linux hébergé sur Bitkeeper. Mais contrat non renouvelé pour certains dev.
+
 => Décision de Linus Torvald d'héberger le noyau sur son propre gestionnaire de
 versions. git était né (2005).
 
@@ -43,7 +46,9 @@ Vous vous dites : ça prends trop de place !
 37
 --
 Je vous ai menti, compression à la MPEG : 1 snapshot, N diffs, 1 snapshot
+
 Du coups ça prends peu de place
+
 ====> parlons de dag
 
 40
@@ -67,8 +72,9 @@ Mais comment on y accède ?
 Concept le plus dur à appréhender
 
 61
-En partant de ce constat, comment sait-on où on est dans le graphe ? Indice : un commit ne pas connait sa branche
 --
+En partant de ce constat, comment sait-on où on est dans le graphe ? Indice : un commit ne pas connait sa branche
+
 Branches de git différentes de celles de Mercurial.
 
 75
@@ -82,7 +88,9 @@ HEAD est déplacé automatiquement, Tag manuellement
 79
 --
 Quand une référence est perdue à jamais, elle est supprimée.
+
 Il y a un ramasse-miettes qui supprime toutes les références inaccessibles au bout d'un certain temps.
+
 ====> Ce problème est bien épineux, faisons une pause sur le dag avant de résoudre ce soucis.
 
 80
@@ -104,9 +112,13 @@ Alias permet de raccourcir les noms. Différence avec un tag: un alias est attac
 branche donnée.
 
 Remote = Namespace avec des branches.
+
 Les branches du remote n'ont aucun rapport pré-défini avec les branches locales.
+
 Par exemple: pour un dépôt git ayant des branches master et b1, et un dépôt local avec
+
 master, b1 et b2, l'utilisateur peut décider de merger la branche remote de github b1
+
 sur la branche locale b2 avec la commande 'git pull b2:github/b1'.
 
 90
@@ -141,9 +153,9 @@ Permet de mettre des messages de commit et de faire les fusions
 --
 Bouge HEAD et le working directory à REF
 
-108 # Remet le dépôt (HEAD + br/HEAD) et/ou l'index et/ou la copie de travail à REF
+108
 --
-
+Remet le dépôt (HEAD + br/HEAD) et/ou l'index et/ou la copie de travail à REF
 
 109
 --
@@ -185,24 +197,34 @@ as-t-on une alternative au grand saut ?
 131
 --
 .git indique un dépôt partagé, fait par init --bare
+
 on peut push sur un dépôt partagé, mais on ne peut que pull sur un dépôt normal
+
 un dépôt partagé n'a pas de working directory
 
 132
 --
 push toutes les branches
+
 master sur origin/b1
+
 idem pour fetch
 
 136
 --
 Fast forward par défaut sur merge
+
 commit sur pull
+
 les plus utilisés en haut
 
 139
 --
-réécrit les commits ; En cas de conflit, on le résout commit par commit ; utilisez le
+réécrit les commits
+
+En cas de conflit, on le résout commit par commit
+
+utilisez le
 
 140
 --
