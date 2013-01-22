@@ -4,7 +4,7 @@
 !SLIDE
 git, ce n'est pas de la magie !
 
-![Magie](magie.gif)
+![Magie](magie_.gif)
 
 !SLIDE
 Un grand pouvoir implique de grandes responsabilités.
@@ -12,7 +12,7 @@ Un grand pouvoir implique de grandes responsabilités.
 !SLIDE
 Ne remplace pas la communication
 
-![Travail d'équipe](equipe.gif)
+![Travail d'équipe](equipe_.gif)
 
 !SLIDE
 Faites plein de petits commits

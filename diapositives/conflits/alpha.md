@@ -2,7 +2,7 @@
 # Conflits #
 
 !SLIDE
-![Ça va mal se passer](brute.gif)
+![Ça va mal se passer](brute_.gif)
 
 !SLIDE bullets
 * resolve
@@ -26,4 +26,4 @@
 	$ git mergetool
 
 !SLIDE
-![Sans les mains](zebre.gif)
+![Sans les mains](zebre_.gif)

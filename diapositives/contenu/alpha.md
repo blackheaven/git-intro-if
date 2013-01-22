@@ -36,7 +36,7 @@ Le fichier est enregistré en entier
 !SLIDE
 .notes Ça prendrait trop de place !
 
-![Oh](oh.gif)
+![Oh](oh_.gif)
 
 !SLIDE
 # NON !

@@ -1,7 +1,7 @@
 !SLIDE
 .notes On va parler de dagues, oups pas ce genre
 
-![Poignard](cut.gif)
+![Poignard](cut_.gif)
 
 !SLIDE
 ![Graphe](graph.jpg)
@@ -19,7 +19,7 @@ Fait partie du backend
 !SLIDE
 .notes Rappel : tout est SHA-1
 
-![SHA](chat.gif)
+![SHA](chat_.gif)
 
 !SLIDE
 # Chaque commit comprend
@@ -66,4 +66,4 @@ Un commit = un nœud du graphe
 !SLIDE
 .notes Mais comment on y accède ?
 
-![Perplexe](perplex.gif)
+![Perplexe](perplex_.gif)

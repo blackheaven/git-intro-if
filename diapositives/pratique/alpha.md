@@ -2,4 +2,4 @@
 # Pratique #
 
 !SLIDE center
-![Ah les débuts...](pratique.gif)
+![Ah les débuts...](pratique_.gif)

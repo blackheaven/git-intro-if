@@ -47,7 +47,7 @@ ou
 	 main.c
 	 1 file changed, 1 insertion(+)
 
-![J'ai perdu le tête](tete.gif)
+![J'ai perdu le tête](tete_.gif)
 
 !SLIDE 
-![Chute libre](saut.gif)
+![Chute libre](saut_.gif)

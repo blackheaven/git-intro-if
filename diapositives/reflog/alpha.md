@@ -28,7 +28,7 @@ un commit ne connait que ses parents, on peut donc en perdre
 !SLIDE
 .notes Impossible de perdre quoi que ce soit et de devoir refaire un clone, fini les detached HEAD
 
-![La classe](chat.gif)
+![La classe](chat_.gif)
 
 !SLIDE
 
