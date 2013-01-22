@@ -33,6 +33,8 @@ utilisées à la place du backend)
 
 26
 --
+==> PH
+
 git => gestionnaire de contenu.
 
 27
@@ -69,6 +71,8 @@ Mais comment on y accède ?
 
 55
 --
+==> G
+
 Concept le plus dur à appréhender
 
 61
@@ -124,6 +128,10 @@ sur la branche locale b2 avec la commande 'git pull b2:github/b1'.
 90
 --
 Poser la question : "Que fait cette commande ?"
+
+91
+--
+==> PH
 
 93
 --
@@ -193,6 +201,9 @@ pourquoi ? on a fait un commit sur aucune branche, donc il est inaccessible sans
 --
 as-t-on une alternative au grand saut ?
 
+124
+--
+==> G
 
 131
 --
